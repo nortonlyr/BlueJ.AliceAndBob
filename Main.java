@@ -8,7 +8,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name : ");
         String name = scanner.nextLine();
-        if(name.toLowerCase().equals("alice") || name.toLowerCase().equals("bob")){
+        
+        if(name.toLowerCase().equals("alice") || 
+            name.toLowerCase().equals("bob")){
             System.out.printf("Hello %s !! Welcome to ZipCode!!\n", name);
         }
     }
