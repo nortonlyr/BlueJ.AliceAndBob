@@ -22,7 +22,7 @@ class AliceAndBobEngineTest {
 	}
 	
 	@Test
-	void evaluateAliceOrBobTestAlice() {
+	public void evaluateAliceOrBobTestAlice() {
 		AliceAndBobEngine aliceAndBobEngineTest = new AliceAndBobEngine();
 		
 		assertEquals("Hello, Alice", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
@@ -32,6 +32,15 @@ class AliceAndBobEngineTest {
 		assertNotEquals("I don't know you!", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
 	}
 	
-	
+	@Test
+	public void evaluateAliceOrBobTestBob() {
+		AliceAndBobEngine aliceAndBobEngineTest = new AliceAndBobEngine();
+		
+		assertEquals("Hello, Bob", aliceAndBobEngineTest.evaluateAliceOrBob("Bob"));
+		assertNotEquals("Hello, Alice", aliceAndBobEngineTest.evaluateAliceOrBob("Wrong person again"));
+		
+		assertEquals("I don't know you!", aliceAndBobEngineTest.evaluateAliceOrBob("Bobert"));
+		assertNotEquals("I don't know you!", aliceAndBobEngineTest.evaluateAliceOrBob("Bob"));
+	}
 
 }
