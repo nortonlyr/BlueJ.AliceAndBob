@@ -28,8 +28,8 @@ class AliceAndBobEngineTest {
 		assertEquals("Hello, Alice", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
 		assertNotEquals("Hello, Alice", aliceAndBobEngineTest.evaluateAliceOrBob("You are reaching the wrong person"));
 		
-		assertEquals("I don't know you", aliceAndBobEngineTest.evaluateAliceOrBob("Alicia"));
-		assertNotEquals("I don't know you", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
+		assertEquals("I don't know you!", aliceAndBobEngineTest.evaluateAliceOrBob("Alicia"));
+		assertNotEquals("I don't know you!", aliceAndBobEngineTest.evaluateAliceOrBob("Alice"));
 	}
 	
 	
