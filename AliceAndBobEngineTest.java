@@ -42,5 +42,13 @@ class AliceAndBobEngineTest {
 		assertEquals("I don't know you!", aliceAndBobEngineTest.evaluateAliceOrBob("Bobert"));
 		assertNotEquals("I don't know you!", aliceAndBobEngineTest.evaluateAliceOrBob("Bob"));
 	}
-
+	
+	@Test
+	public void evaluateAliceOrBobTestWrong() {
+		AliceAndBobEngine aliceAndBobEngineTest = new AliceAndBobEngine();
+		
+		assertNotEquals("I don't know you~", aliceAndBobEngineTest.evaluateAliceOrBob("Tom"));
+		assertNotEquals("I don't know you?", aliceAndBobEngineTest.evaluateAliceOrBob("Peter"));
+		assertNotEquals("New method?", aliceAndBobEngineTest.evaluateAliceOrBob("Luna"));
+	}
 }
